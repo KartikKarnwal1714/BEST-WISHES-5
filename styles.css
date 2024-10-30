@@ -1,0 +1,175 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+#fireworksCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.first{
+    background: linear-gradient(270deg, red, orange, yellow, green, blue, indigo, violet);
+    background-size: 200% 200%;
+    background-clip: text;
+    color: transparent;
+    animation: flow 3s linear infinite;
+}
+@keyframes flow {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+.first{
+    display: flex;
+    /* border: 2px solid #ffffff; */
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#happy{
+    display: flex;
+    font-family: 'Times New Roman', Times, serif;
+    /* border: 2px solid #ffffff; */
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 70px;
+    font-size: 75px;
+    margin-top: 10px;
+}
+#diwali{
+    display: flex;
+    font-family: Verdana, sans-serif;
+    /* border: 2px solid #ffffff; */
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 225px;
+    font-size: 250px;
+    margin-top: -100px;
+}
+#second{
+    display: flex;
+    color: aqua;
+    /* border: 2px solid #ffffff; */
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 100px;
+    margin-top: -200px;
+    font-size: 25px;
+    text-align: center;
+}
+.three{
+    display: flex;
+    /* border: 2px solid #ffffff; */
+    width: 300px;
+    height: 200px;
+    margin-top: -201px;
+}
+.four{
+    display: flex;
+    /* border: 2px solid #ffffff; */
+    width: 300px;
+    height: 200px;
+    margin-top: -205px;
+    margin-left: 1060px;
+}
+.six{
+    display: flex;
+    flex-direction: row;
+}
+#eight{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin-top: 115px;
+    margin-right: 60px;
+    background: linear-gradient(45deg, red, orange, yellow, green, blue, violet);
+}
+.seven{
+    display: flex;
+    border: 5px solid;
+    border-image: linear-gradient(45deg, red, orange, yellow, green, blue, violet);
+    border-image-slice: 1;
+    width: 300px;
+    height: 200px;
+    margin-top: 110px;
+    color: aqua;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+    transform: rotate(-15deg);
+}
+@media (max-width: 1200px) {
+    #diwali {
+        font-size: 150px; /* Adjusting for smaller screens */
+    }
+    #second {
+        font-size: 20px; /* Smaller text */
+        width: 90%; /* Use more width */
+    }
+    .first {
+        height: auto; /* Allow flexibility */
+    }
+}
+
+@media (max-width: 992px) {
+    #happy {
+        font-size: 50px; /* Smaller text */
+        width: 80%;
+    }
+    .six {
+        flex-direction: column; /* Stack elements */
+        align-items: center;
+    }
+    #eight {
+        width: 100px; /* Smaller image */
+        height: 100px;
+        margin: 10px 0;
+    }
+    .seven {
+        font-size: 40px; /* Smaller font */
+    }
+}
+
+@media (max-width: 768px) {
+    #diwali {
+        font-size: 100px; /* Further adjust for smaller screens */
+    }
+    #second {
+        font-size: 18px; /* Further smaller text */
+    }
+    .three, .four {
+        width: 80%; /* Use more width on small devices */
+        height: auto; /* Allow flexibility */
+        margin: 0 auto; /* Center align */
+    }
+}
+
+@media (max-width: 480px) {
+    #happy {
+        font-size: 30px; /* Even smaller text */
+    }
+    #diwali {
+        font-size: 60px; /* Further adjust */
+    }
+    #second {
+        font-size: 16px; /* Smaller text */
+    }
+    .seven {
+        font-size: 30px; /* Smaller font size */
+    }
+    #eight {
+        width: 80px; /* Further reduce size */
+        height: 80px;
+    }
+}
